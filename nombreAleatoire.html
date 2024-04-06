@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nombreAleatoire</title>
+</head>
+<body>
+    <script>
+    /*const nombreAleatoire = Math.round(Math.random());
+
+     let resultat; 
+
+     if (nombreAleatoire < 0.5) {
+         resultat = "pile"; 
+     } else {
+         resultat = "face"; 
+     }
+     const deviner = "face"; 
+
+     if (deviner === resultat) { 
+         console.log("Vous gagnez"); 
+     } else {
+         console.log("Vous perdez !"); 
+     }*/
+     
+     //(challenge) au lieu d'utiliser les instructions if dans les exercices précédents,
+     // essayez de les changer en opérateurs ternaires (condition ? A : B)
+     const nombreAleatoire = Math.round(Math.random());
+     //Génère un nombre aléatoire entre 0 et 1 à l'aide de Math.random(), 
+     //puis l'arrondit à l'entier le plus proche à l'aide de Math.round() 
+     //et l'enregistre dans la variable nombreAleatoire.
+
+     const resultat = (nombreAleatoire < 0.5) ? "pile" : "face";//Utilisation de l'opérateur ternaire 
+
+     console.log(resultat);
+
+     const deviner = "face"; 
+
+     const message = (deviner === resultat) ? "Vous gagnez" : "Vous perdez !";
+
+     console.log(message);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horloge</title>
+</head>
+<body>
+    <script>
+        //Cette ligne crée une variable nommée "heure" et utilise la méthode getHours()
+        //pour obtenir l'heure actuelle en heures (0-23) depuis l'objet Date. 
+        let heure = new Date().getHours(); 
+
+        if(heure >= 6 && heure < 12){
+            console.log("Bonjour !")
+        } 
+        else if (heure >= 12 && heure < 17){
+            console.log("Bon après-midi !")
+        }
+        else{
+            console.log("Bonne nuit !")
+        }
+
+        heure = 20;// Cette ligne modifie la valeur de la variable "heure" à des fins de test.
+
+        if (heure >= 6 && heure < 12) {
+            console.log("Bonjour !");
+        } else if (heure >= 12 && heure < 17) {
+            console.log("Bon après-midi !");
+        } else {
+            console.log("Bonne nuit !");
+        }
+
+        let nom = "Abdoulaye";// je declare une variable nommée nom 
+
+        if (heure >= 6 && heure < 12) {
+            console.log(`Bonjour ${nom} !`);
+        } else if (heure >= 12 && heure < 17) {
+            console.log(`Bon après-midi ${nom} !`);
+        }         else {
+            console.log(`Bonne nuit ${nom} !`);
+        }
+    </script>
+</body>
+</html>

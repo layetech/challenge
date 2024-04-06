@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parc</title>
+</head>
+<body>
+    <script>
+        let age = 5;
+        if (age <= 6 || age >= 65){//Opérateur OU (||)
+        }
+        else {
+            console.log("Pas de remise");
+        }
+
+        age = 6;
+        if (age <= 6 || age >= 65){
+            console.log("Remise");
+        }
+        else {
+            console.log("Pas de remise");
+        }
+        const jourFerie = true;
+        if ((age <= 6 || age >= 65) && !jourFerie){ //Cette ligne met à jour la condition pour 
+            //inclure la vérification de jour férié. Elle utilise l'opérateur && pour vérifier 
+            //à la fois si la personne est éligible pour la remise et si ce n'est pas un jour férié.
+            console.log("Remise");
+        }
+        else {
+            console.log("Pas de remise");
+        }
+        const jourFerie2 = false;
+        if ((age <= 6 || age >= 65) && !jourFerie2){//Cette ligne change la valeur
+            // de jourFerie pour tester différentes conditions de jour férié.
+            console.log("Remise");
+        }
+        else {
+            console.log("Pas de remise");
+        }
+    </script>
+</body>
+</html>
